@@ -1,9 +1,12 @@
 import { Toaster } from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import { Button, Input, Form, Table, Modal } from "antd";
 import { Layout } from "antd";
 import { useState } from "react";
 import "antd/dist/reset.css";
+import LoginForm from "./Lap 3/LoginForm";
+import RegisterForm from "./Lap 3/RegisterForm";
+import PostForm from "./Lap 3/PostForm";
 
 
 const { Header, Footer, Content } = Layout;
@@ -11,6 +14,13 @@ const { Header, Footer, Content } = Layout;
 function App() {
   return (
     <>
+
+    <Routes>
+      <Route path="/login" element={<LoginForm />} />
+      <Route path="/register" element={<RegisterForm />} />
+      <Route path="/post" element={<PostForm />} />
+    </Routes>
+
       <nav className="bg-blue-600 text-white shadow">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="#" className="text-xl font-semibold">
@@ -18,7 +28,7 @@ function App() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="#" className="hover:text-gray-200">
+            <Link to="/" className="hover:text-gray-200">
               Trang chủ
             </Link>
             <Link to="/list" className="hover:text-gray-200">
@@ -27,13 +37,19 @@ function App() {
             <Link to="/add" className="hover:text-gray-200">
               Thêm mới
             </Link>
+            <Link to="/contact" className="hover:text-gray-200">
+              Liên hệ
+            </Link> 
+            <Link to="/post" className="hover:text-gray-200">
+              Thêm bài viết
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="#" className="hover:text-gray-200">
+            <Link to="/login" className="hover:text-gray-200">
               Đăng nhập
             </Link>
-            <Link to="#" className="hover:text-gray-200">
+            <Link to="/register" className="hover:text-gray-200">
               Đăng ký
             </Link>
           </div>
