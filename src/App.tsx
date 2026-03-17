@@ -4,9 +4,10 @@ import { Button, Input, Form, Table, Modal } from "antd";
 import { Layout } from "antd";
 import { useState } from "react";
 import "antd/dist/reset.css";
-import LoginForm from "./Lap 3/LoginForm";
-import RegisterForm from "./Lap 3/RegisterForm";
-import PostForm from "./Lap 3/PostForm";
+import LoginForm from "./Lab 3/LoginForm";
+import RegisterForm from "./Lab 3/RegisterForm";
+import PostForm from "./Lab 3/PostForm";
+import CategoryAdd from "./Lab 4/CategoryAdd";
 
 
 const { Header, Footer, Content } = Layout;
@@ -19,6 +20,7 @@ function App() {
       <Route path="/login" element={<LoginForm />} />
       <Route path="/register" element={<RegisterForm />} />
       <Route path="/post" element={<PostForm />} />
+      <Route path="/category" element={<CategoryAdd />} />
     </Routes>
 
       <nav className="bg-blue-600 text-white shadow">
@@ -34,8 +36,8 @@ function App() {
             <Link to="/list" className="hover:text-gray-200">
               Danh sách
             </Link>
-            <Link to="/add" className="hover:text-gray-200">
-              Thêm mới
+            <Link to="/category" className="hover:text-gray-200">
+              Thêm danh mục
             </Link>
             <Link to="/contact" className="hover:text-gray-200">
               Liên hệ

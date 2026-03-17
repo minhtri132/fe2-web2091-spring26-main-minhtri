@@ -1,4 +1,35 @@
 {
-  "products": [],
+  "products": [
+    {
+      "title": "Dragon Ball",
+      "description": "Hay",
+      "active": true,
+      "id": 1
+    },
+    {
+      "title": "sadsa",
+      "description": "sadsad",
+      "active": true,
+      "id": 2
+    },
+    {
+      "title": "sfasdf",
+      "description": "sdfasdf",
+      "active": true,
+      "id": 3
+    },
+    {
+      "title": "áds",
+      "description": "đâsd",
+      "active": true,
+      "id": 4
+    },
+    {
+      "title": "áds",
+      "description": "đâsd",
+      "active": true,
+      "id": 5
+    }
+  ],
   "users": []
 }
