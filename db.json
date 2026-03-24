@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "createdAt": "2026-03-19T10:00:00.000Z",
       "title": "Dragon Ball",
       "description": "Hay",
       "active": true,
@@ -31,5 +32,16 @@
       "id": 5
     }
   ],
-  "users": []
+  "users": [],
+
+  "stories": [
+    {
+      "id": 1,
+      "title": "Story 1",
+      "author": "Author 1",
+      "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.JvJoY1idUel3pWDYbEFjAAHaEK%3Fpid%3DApi&sp=1773909685T27dac99aff448a6d5c6add249ed64a8f645ab8c6cb46d46ce194a66dbd75d7b0",
+      "createdAt": "2026-03-19T10:00:00.000Z"
+
+    }
+  ]
 }
